@@ -1,8 +1,8 @@
 
 
-Design by Tim O'Brien [t413.com](http://t413.com/)
+UofaCarpool
 &mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
+Engineers for a Sustainable World
 &mdash;
-this site is [open source]({{ site.source_link }})
+Kian Kyars
 
