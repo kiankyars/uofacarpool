@@ -1,0 +1,28 @@
+---
+title: "home"
+bg: white
+color: black
+style: center
+---
+
+### **UofA Carpool**
+{: .text-purple}
+
+<span class="fa-stack subtlecircle" style="font-size:100px; background:rgba(255,166,0,0.1)">
+  <i class="fa fa-circle fa-stack-2x text-white"></i>
+  <i class="fa fa-bicycle fa-stack-1x text-orange"></i>
+</span>
+
+# How to Get Started
+{: .text-purple}
+
+
+UofA Carpool was made to make our campus more eco-friendly!
+
+Signing up is simple, fill the [google form](https://forms.gle/56qjYjCgN5nAuGE39) and you will be matched on time and location!
+
+{% highlight html linenos=table %}
+<div class="icontain">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDMrrW5bT5JcJeK2rNX3a5l-87-y1RaeH7sMAgAvUcx0Ghvg/viewform?embedded=true" width="640" height="2282" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+{% endhighlight %}
