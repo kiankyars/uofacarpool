@@ -3,8 +3,9 @@ title: "questions"
 bg: green
 color: white
 fa-icon: question
+style: center
 ---
 
 ## Questions, Concerns or Looking to Collaborate?
 
-- Send an [email](mailto:kkyars@ualberta.ca?subject=UofA%20Carpool) with the subject UofA Carpool and we will get in touch!
+- Send an [email](mailto:kkyars@ualberta.ca?subject=UofACarpool) with the subject UofACarpool and we will get in touch!
