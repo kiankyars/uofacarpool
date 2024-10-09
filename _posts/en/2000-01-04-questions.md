@@ -4,6 +4,7 @@ bg: green
 color: white
 fa-icon: question
 style: center
+lang: "en"
 ---
 
 ## Questions, Concerns or Looking to Collaborate?

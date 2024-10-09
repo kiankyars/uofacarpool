@@ -4,6 +4,7 @@ bg: green
 color: white
 fa-icon: question
 style: center
+lang: "fr"
 ---
 
 ## Questions, préoccupations ou envie de collaborer ?
