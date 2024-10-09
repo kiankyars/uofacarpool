@@ -1,27 +1,22 @@
----
-
 port: 4000
 host: 0.0.0.0
 safe: false
 
-
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
-permalink: /:title ## disables post output
+permalink: /:lang/:title ## sets the permalink structure to include language
 timezone: null
 lsi: false
 markdown: kramdown
 
-
 ### content configuration ###
 title:       "UofACarpool"
-keywords:    "Carpool, UofA, Univeristy of Alberta, Carpooling, Environment, Commute"
+keywords:    "Carpool, UofA, University of Alberta, Carpooling, Environment, Commute"
 description: "Home page for the UofA Carpool service"
 source_link: "https://uofacarpool.com"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
-
 
 ### template colors, used site-wide via css ###
 colors:
@@ -33,6 +28,22 @@ colors:
   orange:    '#fab125'
   turquoise: '#0fbfcf'
 
+### language configuration ###
+languages:
+  - en
+  - fr
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      lang: "en"  ## default language set to English
+  - scope:
+      path: "fr/"
+      type: "posts"
+    values:
+      lang: "fr"  ## scope for French content
+
 kramdown:
   auto_ids:  false
-
