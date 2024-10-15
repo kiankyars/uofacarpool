@@ -1,4 +1,4 @@
-[Accédez au site-web en français](https://webdocs.cs.ualberta.ca/~kkyars/)
+[Accédez au site-web en français](https://kiankyars.github.io/covoiturageuda)
 &mdash;
 [UofaCarpool](https://www.linkedin.com/company/uofacarpool)
 &mdash;
