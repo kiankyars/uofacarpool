@@ -4,6 +4,7 @@ port: 4000
 host: 0.0.0.0
 safe: false
 
+
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
 permalink: /:title ## disables post output
@@ -11,13 +12,15 @@ timezone: null
 lsi: false
 markdown: kramdown
 
+
 ### content configuration ###
 title:       "UofACarpool"
-keywords:    "Carpool, UofA, University of Alberta, Carpooling, Environment, Commute"
+keywords:    "Carpool, UofA, Univeristy of Alberta, Carpooling, Environment, Commute"
 description: "Home page for the UofA Carpool service"
 source_link: "https://uofacarpool.com"
 favicon:     "img/logo-color.svg"
 touch_icon:  "img/logo-color.png"
+
 
 ### template colors, used site-wide via css ###
 colors:
@@ -31,22 +34,3 @@ colors:
 
 kramdown:
   auto_ids:  false
-
-### multilingual configuration ###
-plugins:
-  - jekyll-polyglot
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-languages: ["en", "fr"]
-default_lang: "en"
-default_language_in_subdir: false
-
-# Do not duplicate static assets per language
-exclude_from_localization:
-  - "img"
-  - "combo.css"
-  - "site.js"
-  - "CNAME"
-  - "README.md"
-  - "_includes/css"
