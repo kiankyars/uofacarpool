@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           bundle config set path 'vendor/bundle'
-          bundle install --jobs 4 --timeout 30
+          bundle install --jobs 4
       - name: Build site
         run: |
           timeout 120 bundle exec jekyll build --trace
