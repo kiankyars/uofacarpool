@@ -18,9 +18,9 @@
   <div id="main">
 
     <div style="text-align:right; padding: 10px 15px; font-size: 14px;">
-      <span>{% if site.active_lang == 'fr' %}<strong>Français</strong>{% else %}<a href="/fr/">Français</a>{% endif %}</span>
+      <span>{% if site.active_lang == 'fr' %}<strong>Français</strong>{% else %}<a href="{{ '/fr/' | prepend: site.baseurl }}">Français</a>{% endif %}</span>
       |
-      <span>{% if site.active_lang == 'en' %}<strong>English</strong>{% else %}<a href="/">English</a>{% endif %}</span>
+      <span>{% if site.active_lang == 'en' %}<strong>English</strong>{% else %}<a href="{{ '/' | prepend: site.baseurl }}">English</a>{% endif %}</span>
     </div>
 
     <nav><ul>
