@@ -9,4 +9,4 @@ lang: "fr"
 
 ## Questions, préoccupations ou envie de collaborer ?
 
-- Envoyez un [courriel](mailto:kkyars@ualberta.ca?subject=UofACarpool) avec l'objet CovoiturageUd'A et nous vous contacterons !
+- Envoyez un [courriel](mailto:kkyars@ualberta.ca?subject=UofACarpool) avec l'objet UofACarpool et nous vous contacterons !
