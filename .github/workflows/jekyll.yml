@@ -27,10 +27,10 @@ jobs:
       - name: Install dependencies
         run: |
           bundle config set path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
+          bundle install --jobs 4 --retry 3 --timeout 60
       - name: Build site
         run: |
-          bundle exec jekyll build --trace
+          timeout 300 bundle exec jekyll build --trace
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
