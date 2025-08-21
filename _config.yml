@@ -35,3 +35,21 @@ colors:
 
 kramdown:
   auto_ids:  false
+
+### multilingual configuration ###
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "fr"]
+default_lang: "en"
+# Keep default language at root. French will be served under /fr/
+default_language_in_subdir: false
+
+# Do not duplicate static assets per language
+exclude_from_localization:
+  - "img"
+  - "combo.css"
+  - "site.js"
+  - "CNAME"
+  - "README.md"
+  - "_includes/css"

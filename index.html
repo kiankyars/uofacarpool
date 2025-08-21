@@ -1,7 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="{{ site.active_lang | default: 'en' }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,15 +17,24 @@
 <body>
   <div id="main">
 
+    <div style="text-align:right; padding: 10px 15px; font-size: 14px;">
+      <span>{% if site.active_lang == 'fr' %}<strong>Français</strong>{% else %}<a href="{{ '/fr/' | relative_url }}">Français</a>{% endif %}</span>
+      |
+      <span>{% if site.active_lang == 'en' %}<strong>English</strong>{% else %}<a href="{{ '/' | relative_url }}">English</a>{% endif %}</span>
+    </div>
+
     <nav><ul>
       {% for node in site.posts reversed %}
+        {% if node.lang == site.active_lang %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+        {% endif %}
       {% endfor %}
     </ul></nav>
 
 
     {% for page in site.posts reversed %}
+      {% if page.lang == site.active_lang %}
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
       <div id="{{id}}" class="section p-{{id}}">
         {% if page.icon %}
@@ -46,6 +55,7 @@
           {{ page.content }}
         </div>
       </div>
+      {% endif %}
     {% endfor %}
 
 

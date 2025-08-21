@@ -1,4 +1,4 @@
-[Accédez au site-web en français](https://kiankyars.github.io/covoiturageuda)
+[Accédez au site-web en français](/fr/)
 &mdash;
 [UofaCarpool](https://www.linkedin.com/company/uofacarpool)
 &mdash;
