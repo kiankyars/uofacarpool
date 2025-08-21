@@ -1,7 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
-  <html dir="ltr" lang="en">
+  <html dir="ltr" lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,26 +18,16 @@
   <div id="main">
 
     <nav><ul>
-      {% assign current_lang = 'en' %}
-      {% if page.url contains '/fr/' %}
-        {% assign current_lang = 'fr' %}
-      {% endif %}
-      
       {% for node in site.posts reversed %}
-        {% if node.lang == current_lang %}
+        {% if node.lang == 'fr' %}
           {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
           <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
         {% endif %}
       {% endfor %}
     </ul></nav>
 
-    {% assign current_lang = 'en' %}
-    {% if page.url contains '/fr/' %}
-      {% assign current_lang = 'fr' %}
-    {% endif %}
-
     {% for page in site.posts reversed %}
-      {% if page.lang == current_lang %}
+      {% if page.lang == 'fr' %}
         {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
         <div id="{{id}}" class="section p-{{id}}">
           {% if page.icon %}
